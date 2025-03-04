@@ -1,0 +1,138 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #252525;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: red;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 80px;
+}
+
+/* About Container */
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1000px;
+    width: 90%;
+}
+
+/* Hexagon Image Container */
+.image-container {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
+    border: 5px solid red;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* About Content */
+.content {
+    max-width: 500px;
+}
+
+.content h1 {
+    font-size: 40px;
+}
+
+.content h1 span {
+    color: red;
+}
+
+.content h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+/* Button */
+.btn {
+    background: red;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: white;
+    color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-container {
+        width: 200px;
+        height: 200px;
+    }
+
+    .content h1 {
+        font-size: 30px;
+    }
+
+    .content h2 {
+        font-size: 20px;
+    }
+}
